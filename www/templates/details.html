@@ -1,0 +1,25 @@
+<ion-view title="Details" id="page9">
+  <ion-content padding="true" class="has-header">
+    <div id="details-container15">
+      <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
+        <img ng-src="{{event.imgURL}}" style="width:100%; display:block;">
+      </div>
+      <h3 id="details-heading8" style="color:#000000;">{{event.name}}</h3>
+      <div id="details-markdown23" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">
+          {{event.fullDesc}}<br><br>
+          <strong>Organizer:</strong> {{event.organizer}}<br>
+          <strong>Date:</strong> {{event.eventDate}}<br>
+          <strong>Time:</strong> {{event.time}}<br>
+          <strong>Venue:</strong> {{event.venue}}<br>
+          <strong>Quota:</strong> {{event.quota}}<br>
+        </p>
+      </div>
+      <div id="details-container16" class="event_details_btn_group">
+        <button class="button button-positive event_details_btn" ng-if="!event.isBook" ng-click="book(event.id)">Book</button>
+        <button class="button button-assertive event_details_btn" ng-if="event.isBook" ng-click="cancel(event.id)">Cancel</button>
+        <a ui-sref="tabsController.map({name: event.venue})" id="details-button12" class="button button-positive event_details_btn">Address</a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

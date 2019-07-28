@@ -1,0 +1,7 @@
+<ion-view title="Venues" id="page11">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="venues-list2">
+      <ion-item ng-repeat="venue in venues" ui-sref="tabsController.events({type: 'Venue', keyword: venue.name})">{{venue.name}}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

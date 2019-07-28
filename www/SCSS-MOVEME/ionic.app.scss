@@ -1,0 +1,19 @@
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.home_event_desc {
+	padding: .8rem;
+}
+
+.home_event_img {
+	max-height: 10rem;
+}
+
+.event_details_btn_group {
+	display: flex;
+	justify-content: space-around;
+}
+
+.event_details_btn {
+	width: 48%;
+}
+

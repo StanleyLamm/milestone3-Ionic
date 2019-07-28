@@ -1,0 +1,19 @@
+<ion-view title="Home" id="page5">
+  <ion-content padding="true" class="has-header">
+    <a class="list card" style="display:block;text-decoration:none;" ui-sref="tabsController.details({id: event.id})" ng-repeat="event in events">
+      <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
+        <img ng-src="{{event.imgURL}}" style="width:100%; display:block;">
+      </div>
+      <div id="home-container4" class="home_event_desc">
+        <h3 id="home-heading3" style="color:#000000;">{{event.name}}</h3>
+        <div id="home-markdown16" class="show-list-numbers-and-dots">
+          <p style="color:#000000;">
+            {{event.shortDesc}}<br>
+            <strong>Venue:</strong> {{event.venue}}<br>
+            <strong>Date:</strong> {{event.eventDate}}
+          </p>
+        </div>
+      </div>
+    </a>
+  </ion-content>
+</ion-view>

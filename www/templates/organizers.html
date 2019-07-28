@@ -1,0 +1,7 @@
+<ion-view title="Organizers" id="page10">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="organizers-list1">
+      <ion-item ng-repeat="organizer in organizers" ui-sref="tabsController.events({type: 'Organizer', keyword: organizer.name})">{{organizer.name}}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
